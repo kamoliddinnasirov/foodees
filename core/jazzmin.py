@@ -1,4 +1,6 @@
 JAZZMIN_SETTINGS = {
+
+    
     # title of the window (Will default to current_admin_site.site_title if absent or None)
     "site_title": "Library Admin",
 
@@ -101,6 +103,7 @@ JAZZMIN_SETTINGS = {
         "auth": "fas fa-users-cog",
         "auth.user": "fas fa-user",
         "auth.Group": "fas fa-users",
+        "main.models.About" : "fa-regular fa-address-card",
     },
     # Icons that are used when one is not manually specified
     "default_icon_parents": "fas fa-chevron-circle-right",
