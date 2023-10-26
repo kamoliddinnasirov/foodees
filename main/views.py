@@ -13,6 +13,16 @@ class AboutView(ListView):
     model = About
 
 
+class FeatureView(ListView):
+    template_name = 'main/feature.html'
+    model = Feature
+
+
+class MenuView(ListView):
+    template_name = 'main/menu.html'
+    model = Menu
+
+
 
 
 

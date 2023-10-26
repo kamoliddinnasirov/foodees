@@ -28,6 +28,12 @@
 
 	<link rel="stylesheet" href="{% static 'css/style.css' %}">
 
+	<!-- <style>
+		.left_image{
+			background-image: none;
+		}
+	</style> -->
+
 
 	<!-- Modernizr JS -->
 	<script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
@@ -37,7 +43,7 @@
 			<div class="fh5co-main-nav">
 				<div class="container-fluid">
 					<div class="fh5co-menu-1">
-						<a href="#" data-nav-section="home">Home</a>
+						<a href="{% url 'main:home'%}" data-nav-section="home">Home</a>
 						<a href="{% url 'main:about'%}" data-nav-section="about">About</a>
 						<a href="#" data-nav-section="features">Features</a>
 					</div>
@@ -61,7 +67,7 @@
 		<div class="container">
 			<div class="row row-padded">
 				<div class="col-md-12 text-center">
-					<p class="to-animate">&copy; 2023 Foodee Python 3-23 group <br> Designed by <a href="#" target="_blank">Kamoliddin</a> Demo Images: <a href="http://pexels.com/" target="_blank">Pexels</a> <br> Tasty Icons Free <a href="http://handdrawngoods.com/store/tasty-icons-free-food-icons/" target="_blank">handdrawngoods</a>
+					<p class="to-animate">&copy; 2023 Foodee Python 3-23 group <br> Designed by <a href="#" target="_blank">Kamoliddin</a>
 					</p>
 					<p class="text-center to-animate"><a href="#" class="js-gotop">Go To Top</a></p>
 				</div>
@@ -77,6 +83,9 @@
 			</div>
 		</div>
 	</div>
+
+
+	<a href="{% url "main:about"%}" data-nav-section="about">About</a>
 	
 	<!-- jQuery -->
 	<script src="{% static 'js/jquery.min.js' %}"></script>
